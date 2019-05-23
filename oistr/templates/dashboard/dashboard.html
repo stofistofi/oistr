@@ -4,7 +4,95 @@
     <div>
         <h1 class="heading">Dashboard</h1>
     </div>
-    <div class="dashboard">
-
+    <div class="container">
+        <div class="card-deck mb-3 text-center" id="dashboard-columns">
+            <div class="card mb-4 shadow-sm" id="dashboard-columns">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Rejected</h4>
+                </div>
+                <div class="card-body">
+                    {% for job in jobs %}
+                        {% if job.status == 'rejected' %}
+                            <!-- This is what we want to drag-and-drop -->
+                            <div class="card mb-4 shadow-sm" id="job-card">
+                                <h5 class="card-title pricing-card-title">{{ job.company }}</h5>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>{{ job.title }}</li>
+                                </ul>
+                            </div>
+                            <!-- Drag-and-drop ends here -->
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm" id="dashboard-columns">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Applied</h4>
+                </div>
+                <div class="card-body">
+                    {% for job in jobs %}
+                        {% if job.status == 'applied' %}
+                            <div class="card mb-4 shadow-sm" id="job-card">
+                                <h5 class="card-title pricing-card-title">{{ job.company }}</h5>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>{{ job.title }}</li>
+                                </ul>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm" id="dashboard-columns">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Contacted</h4>
+                </div>
+                <div class="card-body">
+                    {% for job in jobs %}
+                        {% if job.status == 'contacted' %}
+                            <div class="card mb-4 shadow-sm" id="job-card">
+                                <h4 class="card-title pricing-card-title"> {{ job.company }}</h4>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>{{ job.title }}</li>
+                                </ul>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm" id="dashboard-columns">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Interviewed</h4>
+                </div>
+                <div class="card-body">
+                    {% for job in jobs %}
+                        {% if job.status == 'interviewed' %}
+                            <div class="card mb-4 shadow-sm" id="job-card">
+                                <h4 class="card-title pricing-card-title">{{ job.company }}</h4>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>{{ job.title }}</li>
+                                </ul>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm" id="dashboard-columns">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Accepted</h4>
+                </div>
+                <div class="card-body">
+                    {% for job in jobs %}
+                        {% if job.status == 'accepted' %}
+                            <div class="card mb-4 shadow-sm" id="job-card">
+                                <h4 class="card-title pricing-card-title">{{ job.company }}</h4>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>{{ job.title }}</li>
+                                </ul>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}

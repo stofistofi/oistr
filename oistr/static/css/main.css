@@ -17,3 +17,12 @@
 .footer-container {
     margin: 20px 0px 20px 0px;
 }
+
+#job-card {
+    padding: 5px;
+    margin: 0px;
+}
+
+#dashboard-columns {
+    margin: 0px;
+}

@@ -8,3 +8,5 @@ class Job(models.Model):
     description = models.CharField(max_length=9900, default='Description')
     requirements = models.CharField(max_length=9900, default='Requirements')
     status = models.CharField(max_length=255, default='applied')
+    def __str__(self):
+        return self.company
