@@ -1,0 +1,28 @@
+.dashboard {
+    width: 100px;
+    height: 500px;
+    margin: 50px;
+    background: lightgrey;
+}
+
+#footer {
+    background: grey;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container {
+    margin: 20px 0px 20px 0px;
+}
+
+#job-card {
+    padding: 5px;
+    margin: 0px;
+}
+
+#dashboard-columns {
+    margin: 0px;
+}
