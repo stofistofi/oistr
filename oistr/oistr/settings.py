@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'oistr.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mcgfzypb',
+        'USER': 'mcgfzypb',
+        'PASSWORD': 'APDbq8Q8w6t6VKYEmr4Mmn1uiWnXn952',
+        'HOST': 'balarama.db.elephantsql.com',
+        'PORT': '5432'
     }
 }
 

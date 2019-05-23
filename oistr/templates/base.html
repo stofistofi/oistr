@@ -4,26 +4,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>oistr</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Optional CSS -->
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <title>oistr</title>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <div id="page-container">
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
-            <a class="navbar-brand" href="{% url 'dashboard' %}"><img id="logo" src="/static/images/logo.png" alt="Castle Apartments Logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand" href="{% url 'dashboard' %}">Dashboard</a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                 </ul>
-
                 <div class="form-inline my-2 my-lg-0">
                     <ul class="navbar-nav mr-auto">
                     </ul>
@@ -41,11 +39,13 @@
 
         <footer id="footer">
             <div class="container">
-                <b>CASTLE APARTMENTS</b> <br>
-                Marienplatz 1 <br>
-                Munich, Germany <br>
-                Tel: +49 89 268141 <br>
-                <a href="mailto:contact@castleapartments.com">contact@castleapartments.com</a>
+                <div class="footer-container">
+                    <b>oistr</b> <br>
+                    Job Hunting Tool <br>
+                    Reykjavík, Iceland <br>
+                    Tel: +354 841 7701 <br>
+                    <a href="mailto:kristofergudmunds@gmail.com">kristofergudmunds@gmail.com</a>
+                </div>
             </div>
         </footer>
 
