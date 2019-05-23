@@ -1,10 +1,53 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>oistr</title>
 </head>
 <body>
 
+    <div id="page-container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+            <a class="navbar-brand" href="{% url 'dashboard' %}"><img id="logo" src="/static/images/logo.png" alt="Castle Apartments Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+
+                <div class="form-inline my-2 my-lg-0">
+                    <ul class="navbar-nav mr-auto">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="body-container">
+            <div class="container">
+                {% block content %}
+
+                {% endblock %}
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+                <b>CASTLE APARTMENTS</b> <br>
+                Marienplatz 1 <br>
+                Munich, Germany <br>
+                Tel: +49 89 268141 <br>
+                <a href="mailto:contact@castleapartments.com">contact@castleapartments.com</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- TODO: jQuery first, then Popper.js, then Bootstrap JS -->
 </body>
 </html>
