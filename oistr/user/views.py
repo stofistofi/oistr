@@ -10,8 +10,7 @@ def register(request):
             # Saving to the database
             prof = profile_form.save(commit=False)
             prof.profileImage = (prof.profileImage if prof.profileImage else 'profileImages/user.png')
-            prof.save()
-            user_form.save()
+            prof.user = user_form.save()
             new_user = authenticate(username=user_form.cleaned_data['username'],
                                     password=user_form.cleaned_data['password1'])
             login(request, new_user)
