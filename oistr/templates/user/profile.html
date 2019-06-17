@@ -1,5 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>User Profile</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 mt-3">
+                        <h1 class="heading">Profile</h1>
+                        <div class="card">
+                            <div class="card-horizontal">
+                                <div class="img-square-wrapper" id="profile-img-square-wrapper">
+                                    <img class="profile-image" src="/media/{{ user.profile.profileImage }}" alt="Profile Image">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">{{ user.first_name }} {{ user.last_name }}</h4>
+                                    <p class="card-text">
+                                        Username: {{ user.username }} <br>
+                                        Email: {{ user.email }}<br>
+                                        Tel: {{ user.profile.phone }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 {% endblock %}
