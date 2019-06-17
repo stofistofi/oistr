@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+            <div id="sign-in-container">
+                <h2>Sign in</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <form class="form form-horizontal", method="post">
+                        {% csrf_token %}
+                                {{ form.username.label_tag }}
+                            <div class="form-group">
+                                {{ form.username }}
+                            </div>
+                                {{ form.password.label_tag }}
+                            <div class="form-group">
+                                {{ form.password }}
+                            </div>
+                            <p>New to Castle Apartments? <a id="register-link" href="{% url 'register' %}">Register</a></p>
+                            <input type="submit", class="btn btn-primary submit-button" id="login-button" value="Sign In" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+{% endblock %}
