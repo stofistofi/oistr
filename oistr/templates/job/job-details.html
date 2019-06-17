@@ -2,6 +2,12 @@
 
 {% block content %}
 
-    <p>{{ job.title }}</p>
+    <h1> {{ job.company }}</h1>
+    <h2>{{ job.title }}</h2>
+    <p>Status: {{ job.status }}</p>
+    <h4>Description</h4>
+    <p>{{ job.description }}</p>
+    <h4>Requirements</h4>
+    <p>{{ job.requirements }}</p>
 
 {% endblock %}
