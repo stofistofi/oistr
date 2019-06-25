@@ -1,4 +1,4 @@
-INSERT INTO job_job(company, title, description, requirements, status) VALUES('Amazon', 'Demand Generation Intern', 
+INSERT INTO job_job(company, title, description, requirements, status, user) VALUES('Amazon', 'Demand Generation Intern',
 	'Would you like to be part of a team focused on increasing adoption of Amazon Web Services by engaging with customers that are reinventing their IT strategy by adopting cloud computing? Do you want to gain business savvy, sales experience, and the technical expertise necessary to help further establish Amazon as a leading cloud platform provider?
 		The internship will provide interns with the AWS knowledge, tools, and techniques they need to become highly effective at creating new conversations within a target market and converting them into new opportunities. AWS interns will gain a full understanding of prospecting tactics and AWS prospecting methodologies.
 		The successful candidate will be interested in a career in software or technology sales with the ability to identify and create new business opportunities that drive and grow revenues for AWS.
@@ -28,9 +28,10 @@ INSERT INTO job_job(company, title, description, requirements, status) VALUES('A
 		· Skilled in prospecting techniques.
 		· Well organized, self-motivated, and driven by success.
 		· Knowledge of French, Italian, Arabic, Hebrew, Russian, Swedish or Dutch.',
-	'accepted')
+	'accepted',
+	3)
 
-INSERT INTO job_job(company, title, description, requirements, status) VALUES(
+INSERT INTO job_job(company, title, description, requirements, status, user) VALUES(
 	'Campusjager',
 	'Internship Business Development at High-Growth Startup',
 	'You will have the chance to be part of a growing company, directly influencing its success and its future. You are working side-to-side with the founders on the most pressing issues. You will learn what it means to build a successful company from scratch, which includes sales, marketing, finance, operations, HR and management tasks. For this you must connect your curiosity, our common vision, the client\'s pains and your understanding of current internet technologies. Doing so you will play a key role in disrupting a dormant multi-billion market.
@@ -43,9 +44,10 @@ INSERT INTO job_job(company, title, description, requirements, status) VALUES(
 		You are visionary and analytically very strong. You naturally break problems apart into their components and excel at connecting topics from many different domains
 		You have a positive can-do attitude, love having multiple projects running simultaneously and getting your hands dirty (did we mention we are building a startup?)
 		Ideally you have had some work experience within consulting, sales or in startups. Also, we expect outstanding academic credentials',
-	'applied')
+	'applied',
+	3)
 
-INSERT INTO job_job(company, title, description, requirements, status) VALUES(
+INSERT INTO job_job(company, title, description, requirements, status, user) VALUES(
 	'Deliveroo',
 	'Corporate Sales Development Intern',
 	'The primary role of Corporate Business Development Managers is to engage with new corporations and signing Deliveroo as an official supplier or partner for their office food needs (find out more about our Deliveroo for Business product here - https://deliveroo.es/business/about). They will also liaise between Deliveroo and our Corporate Customers to provide a world-class Deliveroo experience.
@@ -63,9 +65,10 @@ INSERT INTO job_job(company, title, description, requirements, status) VALUES(
 		Creative – exhibits tenacity, never takes no for an answer.
 		Hunger to progress within a fast-paced startup environment
 		Entrepreneurial spirit',
-	'applied')
+	'applied',
+	3)
 
-INSERT INTO job_job(company, title, description, requirements, status) VALUES(
+INSERT INTO job_job(company, title, description, requirements, status, user) VALUES(
 	'Diligent Corporation',
 	'Commercial Internship',
 	'Diligent is looking for an Undergraduate student to work with our successful and dynamic Sales, Customer Success and Marketing team during the summer of 2019. The Internship position will work closely with our commercial teams directly contributing to their success through increasing new sales, enhancing our customers success and broadening our marketing reach. This is an exciting opportunity to gain experience working for a rapidly expanding B2B Software-as-a-Service company in our London office. Our company is growing fast and it is an exciting time to be part of the team!
@@ -79,9 +82,10 @@ INSERT INTO job_job(company, title, description, requirements, status) VALUES(
 		Knowledge and experience working with Salesforce is an advantage.
 		Strong capability in MS Excel; proficient in Word and PowerPoint.
 		Availability for 8 weeks from late early July-end August.',
-	'applied')
+	'applied',
+	3)
 
-INSERT INTO job_job(company, title, description, requirements, status) VALUES(
+INSERT INTO job_job(company, title, description, requirements, status, user) VALUES(
 	'Wrike',
 	'Sales Operations Analyst Intern',
 	'Maintain data integrity to ensure accurate insights, positively impacting sales leadership’s ability to adjust strategy and tactics
@@ -110,4 +114,5 @@ INSERT INTO job_job(company, title, description, requirements, status) VALUES(
 		Strong data management, Excel, and analytical skills
 		Strong problem-solving skills, data and software applications
 		Currently enrolled in a Bachelor\'s or Master\'s degree program, and in your final year of study',
-	'applied')
+	'applied',
+	3)

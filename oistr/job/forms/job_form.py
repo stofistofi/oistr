@@ -8,7 +8,7 @@ class JobForm(ModelForm):
 
     class Meta:
         model = Job
-        exclude = [ 'id' ]
+        exclude = [ 'id', 'user' ]
         widgets = {
             'company': widgets.TextInput(attrs={'class': 'form-control'}),
             'title': widgets.TextInput(attrs={'class': 'form-control'}),
