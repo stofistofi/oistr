@@ -1,4 +1,4 @@
-INSERT INTO jobs(company, title, description, requirements, status, user) VALUES(
+INSERT INTO job_job(company, title, description, requirements, status, user_id) VALUES(
 	'PTC',
 	'Sales License Compliance Internship',
 	'You will be trained on the fundamentals of international investigation, data analysis and negotiation skills you will need to be effective in your role
@@ -14,10 +14,10 @@ INSERT INTO jobs(company, title, description, requirements, status, user) VALUES
 		Pro-active and willing to interact
 		Preferably already living or able to relocate soon in Barcelona',
 	'contacted',
-	3
+	2
 );
 
-INSERT INTO jobs(company, title, description, requirements, status, user) VALUES(
+INSERT INTO job_job(company, title, description, requirements, status, user_id) VALUES(
 	'Amazon Web Services',
 	'Cloud Support Associate',
 	'We are seeking people with strong customer support and technical skills. Do you have experience troubleshooting problems spanning multiple systems? Do you have an interest in web technologies? Do you have experience providing world-class customer service? If you fit the description, you might be the person we are looking for! Every day will bring new and exciting challenges on the job while you:
@@ -44,10 +44,10 @@ INSERT INTO jobs(company, title, description, requirements, status, user) VALUES
 		Exposure to android or iOS software
 		Basic Web/systems Administration – Apache Servers',
 	'accepted',
-	3
+	4
 );
 
-INSERT INTO jobs(company, title, description, requirements, status, user) VALUES(
+INSERT INTO job_job(company, title, description, requirements, status, user_id) VALUES(
 	'Manhattan Associates',
 	'Support Consultant Internship',
 	'Systematic technical and product and consultancy trainings and excellent opportunities to grow
@@ -64,10 +64,10 @@ INSERT INTO jobs(company, title, description, requirements, status, user) VALUES
 		You will ideally have been part of society, group or team as part of your academic career or extracurricular activities that has made a contribution to the student community
 		Be located or willing to be located close to our office in Paris La Défense',
 	'rejected',
-	3
+	2
 );
 
-INSERT INTO jobs(company, title, description, requirements, status, user) VALUES(
+INSERT INTO job_job(company, title, description, requirements, status, user_id) VALUES(
 	'Sportradar',
 	'Client Setup Engineer',
 	'Activate new customers by being responsible in helping the customer integrating our product and services
@@ -80,11 +80,11 @@ INSERT INTO jobs(company, title, description, requirements, status, user) VALUES
 		Basic understanding of programming, databases, server technologies, communication protocols and XML
 		Candidates who are fluent in other languages, with similar work experience, Java or .NET competence will be preferred
 		Technical Customer Support experience',
-	'contacted',
-	3
+	'interviewed',
+	4
 );
 
-INSERT INTO jobs(company, title, description, requirements, status, user) VALUES(
+INSERT INTO job_job(company, title, description, requirements, status, user_id) VALUES(
 	'FireEye, Inc.',
 	'Sales Engineer Intern',
 	'This internship will provide an opportunity to learn and work alongside the Sales Systems Engineering team at FireEye. This intern will be a partner-focused security professional, who provides high-level pre-sales support, training, and guidance to Channel Partners and customers on FireEye cyber security solutions. In this role you will also collaborate with the Sales and SE teams on elaboration of enablement content, projects that will benefit the FireEye channel community to drive more mindshare, and business from them.
@@ -111,10 +111,10 @@ INSERT INTO jobs(company, title, description, requirements, status, user) VALUES
 		Have a mix of business and technical knowledge and skills, since the work encompasses both product and business assessment
 		Fluency in English in addition to local language.',
 	'accepted',
-	3
+	2
 );
 
-INSERT INTO jobs(company, title, description, requirements, status, user) VALUES(
+INSERT INTO job_job(company, title, description, requirements, status, user_id) VALUES(
 	'ShuttleCloud Crop.',
 	'Sales Development Intern',
 	'Identifying, prospecting, and qualifying new customers.
@@ -130,10 +130,10 @@ INSERT INTO jobs(company, title, description, requirements, status, user) VALUES
 		Experience with CRM software desired but not required.
 		Proficiency in G Suite preferred.',
 	'rejected',
-	3
+	4
 );
 
-INSERT INTO jobs(company, title, description, requirements, status, user) VALUES(
+INSERT INTO job_job(company, title, description, requirements, status, user_id) VALUES(
 	'idealista',
 	'Field Sales Alicante',
 	'Establish relationships and secure contracts with new customers in order to achieve assigned sales targets;
@@ -149,10 +149,10 @@ INSERT INTO jobs(company, title, description, requirements, status, user) VALUES
 		Microsoft Office user proficiency.
 		You will take  part to our induction programme of 3 months  in our fantastic Málaga Office.',
 	'interviewed',
-	3
+	2
 );
 
-INSERT INTO jobs(company, title, description, requirements, status, user) VALUES(
+INSERT INTO job_job(company, title, description, requirements, status, user_id) VALUES(
 	'Uber Eats',
 	'Regional Sales',
 	'Close deals with top brands in your market by owning the entire end-to-end sales process.
@@ -164,10 +164,10 @@ INSERT INTO jobs(company, title, description, requirements, status, user) VALUES
 	'1-3 years of inside and/or field B2B sales experience in a high growth company, (Technology, FMCG, or Hospitality industry)
 		Experience in sourcing, negotiating and driving contracts to closure.',
 	'accepted',
-	3
+	4
 );
 
-INSERT INTO jobs(company, title, description, requirements, status, user) VALUES(
+INSERT INTO job_job(company, title, description, requirements, status, user_id) VALUES(
 	'Microsoft',
 	'Sales Manager',
 	'Meet or exceed Search revenue targets and deliver upon accurate revenue forecasts through effective management of sales team for a defined territory.
@@ -195,6 +195,6 @@ INSERT INTO jobs(company, title, description, requirements, status, user) VALUES
 		Demonstrated experience leading high performing teams
 		At minimum, Bachelor’s degree required',
 	'rejected',
-	3
+	2
 );
 
