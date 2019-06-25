@@ -1,4 +1,5 @@
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 
 # Create your views here.
@@ -13,7 +14,9 @@ def add_job(request):
 
         if job_form.is_valid():
             # Saving to the database
-            job_form.save()
+            job = job_form.save(commit=False)
+            job.user = User.objects.get(pk=request.user.id)
+            job.save()
             return redirect(reverse('dashboard'))
         else:
             # User inputs invalid info

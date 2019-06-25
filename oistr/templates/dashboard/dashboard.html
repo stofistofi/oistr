@@ -12,7 +12,7 @@
                 </div>
                 <div class="card-body">
                     {% for job in jobs %}
-                        {% if job.status == 'rejected' %}
+                        {% if job.status == 'rejected' and job.user == request.user %}
                             <!-- This is what we want to drag-and-drop -->
                             <a href="/job/{{ job.id }}">
                                 <div class="card mb-4 shadow-sm" id="job-card">
@@ -33,7 +33,7 @@
                 </div>
                 <div class="card-body">
                     {% for job in jobs %}
-                        {% if job.status == 'applied' %}
+                        {% if job.status == 'applied' and job.user == request.user %}
                             <a href="/job/{{ job.id }}">
                                 <div class="card mb-4 shadow-sm" id="job-card">
                                     <h5 class="card-title pricing-card-title">{{ job.company }}</h5>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="card-body">
                     {% for job in jobs %}
-                        {% if job.status == 'contacted' %}
+                        {% if job.status == 'contacted' and job.user == request.user %}
                             <a href="/job/{{ job.id }}">
                                 <div class="card mb-4 shadow-sm" id="job-card">
                                     <h4 class="card-title pricing-card-title"> {{ job.company }}</h4>
@@ -71,7 +71,7 @@
                 </div>
                 <div class="card-body">
                     {% for job in jobs %}
-                        {% if job.status == 'interviewed' %}
+                        {% if job.status == 'interviewed' and job.user == request.user %}
                             <a href="/job/{{ job.id }}">
                                 <div class="card mb-4 shadow-sm" id="job-card">
                                     <h4 class="card-title pricing-card-title">{{ job.company }}</h4>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="card-body">
                     {% for job in jobs %}
-                        {% if job.status == 'accepted' %}
+                        {% if job.status == 'accepted' and job.user == request.user %}
                                 <a href="/job/{{ job.id }}">
                                     <div class="card mb-4 shadow-sm" id="job-card">
                                         <h4 class="card-title pricing-card-title">{{ job.company }}</h4>
